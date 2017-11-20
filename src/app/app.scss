@@ -1,0 +1,47 @@
+// http://ionicframework.com/docs/theming/
+*{
+  font-family: Raleway;
+}
+/* Fonts -size */
+.text-xxs {font-size: 0.6rem!important;}
+.text-xs {font-size: 0.8rem!important;}
+.text-sm {font-size: 1.2rem!important;}
+.text-md {font-size: 1.4rem!important;}
+.text-lg {font-size: 1.6rem!important;}
+.text-xl {font-size: 1.8rem!important;}
+.text-xxl {font-size: 2.2rem!important;}
+.text-xxxl {font-size: 2.6rem!important;}
+
+/* color */
+.primary {color: color($colors, primary);}
+.secondary {color: color($colors, secondary);}
+.dark {color: color($colors, dark);}
+.danger {color: color($colors, danger);}
+.light {color: color($colors, light);}
+.white {color: color($colors, white);}
+
+/* background color */
+.primary-bg {background-color: color($colors, primary);}
+.secondary-bg {background-color: color($colors, secondary);}
+.dark-bg {background-color: color($colors, dark);}
+.danger-bg {background-color: color($colors, danger);}
+.light-bg {background-color: color($colors, light);}
+.white-bg {background-color: color($colors, white);}
+
+.mar-top-32{margin-top: 32px;}
+.mar-vt-32{margin: 32px 0px;}
+.mar-hz-8{margin: 0px 8px;}
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
