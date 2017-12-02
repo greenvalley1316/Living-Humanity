@@ -12,19 +12,9 @@ export class SideMenuPage {
 
   pages: Page[];
   private rootPage;
-  // private aboutusPage;
-  // private servicesPage;
-  // private galleryPage;
-  // private faqPage;
-  // private contactusPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.rootPage = navParams.data;
-    // this.aboutusPage = 'AboutUsPage';
-    // this.servicesPage = 'ServicesPage';
-    // this.galleryPage = 'DealListingPage';
-    // this.faqPage = 'FaqPage';
-    // this.contactusPage = 'ContactUsPage';
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad SideMenuPage');

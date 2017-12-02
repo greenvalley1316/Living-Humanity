@@ -2,12 +2,33 @@
 
   <ion-navbar color="primary">
     <ion-icon margin-horizontal class="text-xxxl" color="light" name="menu" menuToggle></ion-icon>
-    <ion-title text-center>About Us</ion-title>
+    <ion-title text-center class="app-header">
+      <img src="assets/imgs/logo.png">
+      <span>About Us</span>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding-horizontal class="light-bg">
+  <div *ngFor="let data of AboutUsContent; let i = index">
+    <ion-item no-lines margin-top color="primary" class="item-accordian" (click)="showAccordion(i)">
+      <ion-label><strong>{{data.header}}</strong></ion-label>
+      <ion-icon [name]="showIndex == data.index ? 'ios-arrow-up' : 'ios-arrow-down'" color="white"
+                item-right></ion-icon>
+    </ion-item>
+    <ion-scroll scrollY="true" padding text-justify class="scroll-height white-bg" *ngIf="showIndex == data.index">
+      <div [innerHTML]="data.content"></div>
+    </ion-scroll>
+  </div>
+
+  <!--<ion-slides loop pager="true" paginationType="fraction" zoom="true" autoplay="1000" class="team-slide white-bg">-->
+    <!--<ion-slide *ngFor="let member of team">-->
+      <!--<img [src]="member" alt="no-image">-->
+      <!--<div class="text-lg strong">Name</div>-->
+      <!--<div class="text-md">Designation</div>-->
+    <!--</ion-slide>-->
+  <!--</ion-slides>-->
 
 </ion-content>

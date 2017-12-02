@@ -1,15 +1,52 @@
 <ion-header>
 
   <ion-navbar color="primary">
+
     <ion-icon margin-horizontal class="text-xxxl" color="light" name="menu" menuToggle></ion-icon>
-    <ion-title text-center>Home</ion-title>
+    <ion-title text-center class="app-header">
+      <img src="assets/imgs/logo.png">
+      <span>Home</span>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding text-center>
+<ion-content class="light-bg">
 
   <!--<button ion-button round color="primary" (click)="pageTransition()">Page Transition</button>-->
+
+  <div text-center class="home-top-bg">
+    <div class="home-top-border">
+      <p class="text-md strong">Making a difference today and for generations to come</p>
+      <p class="text-sm">Every human being is important and all human beings owe something to their fellow inhabitants
+        of this planet</p>
+      <button ion-button small margin-bottom>Contribute Us</button>
+    </div>
+  </div>
+
+  <div text-right padding-right>
+    <button ion-button class="text-xs" clear>
+      <ion-icon name="eye" class="text-xl"></ion-icon>
+      &nbsp;&nbsp;<span class="strong">775 total views, 7 views today</span>
+    </button>
+  </div>
+
+
+  <p class="text-md strong" text-center no-margin>"One of the purpose of life is to serve humanity"</p>
+  <ion-label text-wrap class="text-sm " padding-horizontal text-justify>
+    We at Living Humanity believe that all people are blessed with things that make life good for them. These blessings
+    are in the form of relationships, faith, material comfort, and a lot more.
+    <span class="strong primary" (click)="readMore()">Read more...</span>
+  </ion-label>
+
+  <div text-center class="home-bottom-bg">
+    <img src="assets/imgs/home-bottom-bg.jpg">
+  </div>
+
+  <p class="text-md strong" padding-horizontal>Next Step</p>
+  <p class="text-sm" padding-horizontal>We expect your possible support in this cause. We want each one of you
+    to live your life with humanity. Serve the needy, help humanity.
+  </p>
 
 </ion-content>
